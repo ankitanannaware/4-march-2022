@@ -9,7 +9,7 @@ header{
     width:40%;
     display:flex;
     justify-content: space-between;
-    margin-left: 440px;
+    margin-left: 380px;
     border-bottom: 4px solid white;
     padding-bottom: 10px;
 }
@@ -22,14 +22,37 @@ h2{
 }
 i{
     padding-top:0px;
-    margin-left:50px;
     font-size: 30px;
 }
 button{
+    width:100px;
     background-color: white;
     color:black;
     padding:10px;
     border:none;
     margin-top:20px;
-
+}
+img{
+    width:150px;
+    height:100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+div{
+    margin-right: 30px;
+    text-align: center;
+}
+.container div button{
+    width:110px;
+    margin-top:0px;
+}
+@media (max-width:768px){
+     header{
+         flex-direction: column;
+     }
+     .container{
+         flex-direction: column;
+     }
 }
